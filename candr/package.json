@@ -1,0 +1,51 @@
+{
+  "private": true,
+  "name": "candr",
+  "description": "Project management for JavaScript and TypeScript.",
+  "version": "0.1.0-prerelease",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Shakeskeyboarde/candr.git",
+    "directory": "packages/candr"
+  },
+  "scripts": {
+    "build": "vite build"
+  },
+  "files": [
+    "dist",
+    "bin.js"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "tag": "prerelease"
+  },
+  "type": "module",
+  "bin": {
+    "candr": "./bin.js",
+    "can": "./bin.js"
+  },
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./main": {
+      "import": "./dist/main.js"
+    }
+  },
+  "dependencies": {
+    "@commander-js/extra-typings": "^12.0.1",
+    "@types/git-url-parse": "^9.0.3",
+    "@types/micromatch": "^4.0.7",
+    "@types/semver": "^7.5.8",
+    "async-sema": "^3.1.1",
+    "chalk": "^5.3.0",
+    "commander": "^12.0.0",
+    "execa": "^9.1.0",
+    "git-url-parse": "^14.0.0",
+    "micromatch": "^4.0.5",
+    "semver": "^7.6.2"
+  }
+}

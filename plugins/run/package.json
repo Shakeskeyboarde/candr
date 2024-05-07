@@ -1,0 +1,31 @@
+{
+  "private": true,
+  "name": "@candr/plugin-run",
+  "description": "The official Candr run command.",
+  "version": "0.1.0-prerelease",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Shakeskeyboarde/candr.git",
+    "directory": "plugins/run"
+  },
+  "scripts": {
+    "build": "vite build"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "tag": "prerelease"
+  },
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "import": "./dist/index.js"
+  },
+  "dependencies": {
+    "candr": "workspace:^"
+  }
+}

@@ -1,0 +1,14 @@
+.vscode/
+node_modules/
+lib/
+dist/
+out/
+coverage/
+
+.DS_Store
+.env*
+*.tar
+*.gz
+*.tgz
+*.zip
+*.log
